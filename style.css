@@ -1,0 +1,296 @@
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+body {
+    margin: auto;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(164, 206, 192);
+    font-size: 1.5rem;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    margin-left: -30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover {
+    color: grey;
+    text-decoration: overline;
+    font-weight: bold;
+    transition: color;
+    transition-duration: 1s;
+    transition-delay: 0.500ms;
+}
+
+.banner {
+    background-image: url(./photo-1597655601841-214a4cfe8b2c.avif);
+    height: 37.5em;
+    background-position: center;
+    margin-top: 90px;
+}
+
+.banner h1 {
+    color: aliceblue;
+    text-shadow: 0px 0px 50px;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+#spotsh2 h2 {
+    text-align: center;
+    background-color: rgb(196, 164, 97);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+.spots {
+    display: flex;
+    flex-shrink: inherit;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 0.1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    background-color: rgb(245, 245, 245, 0.9);
+    padding-bottom: 3rem;
+    background-color: rgb(236, 230, 230);
+    margin: auto;
+}
+
+.spots p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Zilla Slab Highlight', cursive;;
+}
+
+/*#spots {
+    display: flex;
+    flex: 1fr 1fr 1fr;
+    justify-content: space-between;
+    flex-direction: row;
+}*/
+
+#spots img {
+    max-width: 42rem;
+    max-height: 37rem;
+    image-resolution: 800dpi;
+} 
+
+a:hover img{
+    filter: grayscale(100%)
+}
+
+.tour h2 {
+    text-align: center;
+    background-color: rgb(196, 164, 97);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem;
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+.tours {
+    display: flex;
+    flex-shrink: inherit;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 0.1rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgb(236, 230, 230);
+    margin: auto;
+}
+
+.tours img {
+    width: 42rem;
+    image-resolution: 800dpi;
+}
+
+.tour p {
+    text-align: center;
+    background-color: rgb(196, 164, 97);
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+button {
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button::after {
+    content: "";
+    background-color: rgb(255, 228, 77, 0.8);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 0.8rem;
+    left: 0.8rem;
+    transition: 0.2s;
+}
+
+button:hover::after {
+    top: 0em;
+    left: 0em;
+}
+
+button:active::after {
+    background-color: rgb(245, 245, 245, 0.9);
+    box-shadow: 10px 10px 10px;
+}
+
+.join img {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+#join {
+    background-color: rgb(236, 230, 230);
+    padding-bottom: 2.5rem;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.menu2 {
+    text-align: center;
+}
+
+/* Donate Button */
+
+.donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#donate {
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#donate::after {
+    content: "";
+    background-color: rgba(77, 255, 240, 0.8);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 0.8rem;
+    left: 0.8rem;
+    transition: 0.2s;
+}
+
+#donate:hover::after {
+    top: 0em;
+    left: 0em;
+}
+
+footer {
+    padding-top: 2rem;
+}
+
+/* Social Media Buttons */
+
+.fa {
+    padding: 20px;
+    font-size: 2.75rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: white;
+  }
+
+  @media only screen and (max-width: 680px) {
+      body{
+          font-size: 0.75rem;
+      }
+      img {
+          max-width: 80%;
+      }
+
+      .spots p {
+        font-size: 1.5rem;
+      }
+      nav {
+         flex-direction: column;
+         max-width: 4rem;
+         max-height: 3rem;
+         margin-left: 0;
+      }
+      .banner {
+        margin-top: -2.5rem;
+      }
+
+      h1 {
+        margin-top: 10%;
+      }
+  }
